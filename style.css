@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf6f0;
+    text-align: center;
+    color: #333;
+}
+
+header {
+    background-color: #c59d5f;
+    color: white;
+    padding: 40px 20px;
+}
+
+section {
+    padding: 30px 20px;
+}
+
+.mempelai .card {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.acara {
+    background-color: #fff3e0;
+}
+
+.countdown {
+    background-color: #c59d5f;
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.fade {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
