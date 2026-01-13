@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Undangan Pernikahan Ye Feng & Bai Xue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<header class="fade">
+    <h1>Undangan Pernikahan</h1>
+    <h2>Ye Feng & Bai Xue</h2>
+    <p>Sabtu, 20 April 2026</p>
+</header>
+
+<section class="fade">
+    <p>
+        Dengan memohon rahmat Tuhan Yang Maha Esa,  
+        kami mengundang Bapak/Ibu/Saudara/i  
+        untuk menghadiri pernikahan kami.
+    </p>
+</section>
+
+<section class="mempelai fade">
+    <h2>Mempelai</h2>
+
+    <div class="card">
+        <h3>Ye Feng (叶枫)</h3>
+        <p>Putra dari Keluarga Ye</p>
+    </div>
+
+    <div class="card">
+        <h3>Bai Xue (白雪)</h3>
+        <p>Putri dari Keluarga Bai</p>
+    </div>
+</section>
+
+<section class="acara fade">
+    <h2>Detail Acara</h2>
+    <p><strong>Akad:</strong> 09.00 WIB</p>
+    <p><strong>Resepsi:</strong> 11.00 – 14.00 WIB</p>
+    <p>Gedung Serbaguna Bahagia</p>
+</section>
+
+<section class="countdown fade">
+    <h2>Menuju Hari Bahagia</h2>
+    <p id="timer"></p>
+</section>
+
+<footer>
+    <p>Ye Feng & Bai Xue</p>
+    <p>Dibuat oleh: NAMA KAMU – NIM</p>
+    <p>Mata Kuliah: Pemrograman Web</p>
+</footer>
+
+<script>
+const target = new Date("April 20, 2026 09:00:00").getTime();
+const timer = document.getElementById("timer");
+
+setInterval(() => {
+    const now = new Date().getTime();
+    const diff = target - now;
+
+    const d = Math.floor(diff / (1000*60*60*24));
+    const h = Math.floor((diff / (1000*60*60)) % 24);
+    const m = Math.floor((diff / (1000*60)) % 60);
+    const s = Math.floor((diff / 1000) % 60);
+
+    timer.innerHTML = d + " Hari " + h + " Jam " + m + " Menit " + s + " Detik";
+}, 1000);
+</script>
+
+</body>
+</html>
